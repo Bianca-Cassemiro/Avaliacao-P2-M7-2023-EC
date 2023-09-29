@@ -1,23 +1,22 @@
-# Template para avaliação P2
+# Avaliação P2
 
-Saída esperada após execução do programa:
+## Frontend
+criação da instância EC2 para o frontend:
 
-<img src="./media/tela-front.png" display="flex">
+<img width="879" alt="Captura de tela 2023-09-29 143447" src="https://github.com/Bianca-Cassemiro/Avaliacao-P2-M7-2023-EC/assets/99203402/7b433b45-bd47-4237-ba24-32cc571564d4">
 
-# IMPORTANTE:
-
-Para colocar o frontend para funcionar, colocar uma máquina EC2 rodando o Apache WebServer.
-Para isso, instalar dentro da EC2:
-
-```bash
-sudo apt update
-sudo apt upgrade
-sudo apt install apache2
-# os arquivos do projeto devem estar em /var/www/html
-git clone https://github.com/Murilo-ZC/Avaliacao-P2-M7-2023-EC.git
-sudo cp ./Avaliacao-P2-M7-2023-EC/frontend /var/www/html
 ```
+git clone https://github.com/bianca-cassemiro/Avaliacao-P2-M7-2023-EC.git
+sudo cp -r ./Avaliacao-P2-M7-2023-EC/frontend /var/www/html
+```
+<img width="957" alt="Captura de tela 2023-09-29 144430" src="https://github.com/Bianca-Cassemiro/Avaliacao-P2-M7-2023-EC/assets/99203402/b8a94708-fb26-4b29-904c-ef400cc54143">
 
-Aqui pessoal, os arquivos já estaram disponíveis na porta 80, não necessário redirecionar.
+## Database
+Criei o banco de dados RDS, porém não consegui testar no dbeaver
+<img width="889" alt="Captura de tela 2023-09-29 145010" src="https://github.com/Bianca-Cassemiro/Avaliacao-P2-M7-2023-EC/assets/99203402/346137e9-7ce6-41cf-819a-24ebaa4640a1">
+<img width="581" alt="Captura de tela 2023-09-29 151916" src="https://github.com/Bianca-Cassemiro/Avaliacao-P2-M7-2023-EC/assets/99203402/2cc86eae-0993-40a6-a1c1-f97514d4f83d">
 
-> IMPORTANTE: Verificar as rotas e utilziar o seu próprio repositório com as modificações realizadas.
+## Backend
+Criei uma instância Ec2 para o backend, criei um IP elástico e atribui a instância que eu havia criado.
+<img width="773" alt="insta" src="https://github.com/Bianca-Cassemiro/Avaliacao-P2-M7-2023-EC/assets/99203402/b606a70e-a48c-4f8b-a2f9-5d8e463391b7">
+
